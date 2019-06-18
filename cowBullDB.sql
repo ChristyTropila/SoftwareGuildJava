@@ -1,0 +1,24 @@
+DROP DATABASE IF EXISTS cowBullDB;
+CREATE DATABASE cowBullDB;
+
+USE cowBullDB;
+
+CREATE TABLE Game(
+gameId INT PRIMARY KEY AUTO_INCREMENT,
+answer INT NOT NULL,
+gameStatus BOOLEAN NOT NULL
+);
+
+CREATE TABLE Round(
+id INT PRIMARY KEY AUTO_INCREMENT,
+gameId INT NOT NULL,
+roundNum INT NOT NULL,
+guess INT NOT NULL,
+exactMatches INT NOT NULL,
+partialMatches INT NOT NULL,
+currentTime TIME,
+CONSTRAINT fk_GameId FOREIGN KEY(gameId) REFERENCES Game (gameId)
+
+);
+
+
