@@ -1,0 +1,6 @@
+A1::Snickers::2.00::8
+A2::Coke::1.50::4
+A3::Twizzlers::1.25::7
+A4::Mountain Dew::2.25::10
+A5::Pepsi::2.25::10
+A6::Chips::0.75::8
