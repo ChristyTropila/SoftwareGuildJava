@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCost,PerSquareFoot,MaterialCost,LaborCost,Tax,Total
+2::Joby::MI::5.75::Carpet::200::2.25::2.10::450.00::420.00::5002.50::5872.50::02/27/2019

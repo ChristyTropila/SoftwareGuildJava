@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCost,PerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1::useless::PA::6.75::Laminate::80::1.75::2.10::140.00::168.00::2079.00::2387.00::02/25/2019
