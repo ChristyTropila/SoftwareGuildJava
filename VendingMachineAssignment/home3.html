@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    .vendingMachine-card {
+      background-color: white;
+      margin-top: 35px;
+        border-radius: 50px / 15px;
+
+      border: 10px solid black;
+      height: 140px;
+    }
+
+    .side-menu {
+      background-color: white;
+        border-radius: 50px / 5px;
+      border: 20px solid black;
+      height: 575px;
+    }
+
+    .container {
+      background-color: black;
+      height: 550px;
+      width: 200%;
+      border-radius: 50px / 15px;
+      background: #73AD21;
+      padding: 40px;
+      width: 200%;
+      height: 650px;
+
+    }
+
+    body {
+      background-color: black;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="containter md-8">
+    <h1 style="text-align:center; color: white; font-weight:bold; font-family: 'Oswald', sans-serif; font-size: 360%;">Vending Machine</h1>
+  </div>
+  <hr />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row" id="cards">
+            <div class="vendingMachine-card col-md-4" data-itemId="1"></div>
+            <div class="vendingMachine-card col-md-4" data-itemId="2"></div>
+            <div class="vendingMachine-card col-md-4" data-itemId="3"></div>
+            <div class="vendingMachine-card col-md-4" data-itemId="4"></div>
+            <div class="vendingMachine-card col-md-4" data-itemId="5"></div>
+            <div class="vendingMachine-card col-md-4" data-itemId="6"></div>
+            <div class="vendingMachine-card col-md-4" data-itemId="7"></div>
+            <div class="vendingMachine-card col-md-4" data-itemId="8"></div>
+            <div class="vendingMachine-card col-md-4" data-itemId="9"></div>
+          </div>
+        </div>
+        <div class="col-md-4 side-menu">
+          <!--total money in -->
+          <form id="money-in-form">
+            <div class="form-row justify-content-md-center">
+              <div class="col-sm-12">
+                <label for="total-money">Total $:</label>
+                <input type="text" class="form-control" placeholder="$0.00" id="total-money" readonly>
+              </div>
+              <div class="col-6 col-sm-12 col-lg-5">
+                <button style="color:red;  border: 2px solid black;  border-radius: 20px /5px;" type="button" class="btn btn-block" onclick="addDollar()">Add Dollar</button>
+              </div>
+              <div class="col-6 col-sm-12 col-lg-5">
+                <button style="color:red;  border: 2px solid black;  border-radius: 20px /5px;" type="button" class="btn btn-block" onclick="addQuarter()">Add Quarter</button>
+              </div>
+              <div class="col-6 col-sm-12 col-lg-5">
+                <button style="color:red;  border: 2px solid black;  border-radius: 20px /5px;" type="button" class="btn btn-block" onclick="addDime()">Add Dime</button>
+              </div>
+              <div class="col-6 col-sm-12 col-lg-5">
+                <button style="color:red;  border: 2px solid black;   border-radius: 20px /5px;" type="button" class="btn btn-block" onclick="addNickel()">Add Nickel</button>
+              </div>
+            </div>
+          </form>
+          <hr>
+
+          <!--messages and items form -->
+          <form id="items-form">
+            <div class="form-row">
+              <div class="col-sm-12">
+                <label for"messages">Messages</label>
+                <div>
+                  <input type="text" class="form-control" placeholder=" " id="messages" readonly>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-sm-12">
+                  <label for="select-item">Items:</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" placeholder=" " id="select-item" readonly>
+              </div>
+            </div>
+            <div class="form-row justify-content-md-center">
+              <div class="col-md-8">
+                <button style="color:red;  border: 2px solid black;  border-radius: 20px /5px; font-weight: bold" type="button" id="make-purchase" class="btn btn-block">**Make Purchase**</button>
+              </div>
+            </div>
+          </form>
+          <hr>
+
+          <!--change -->
+          <form id="change-form">
+            <div class="col-sm-12">
+              <label for="total-change">Change:</label>
+              <div>
+                <input type="text" class="form-control" placeholder=" " id="total-change" readonly>
+              </div>
+              <div class="row justify-content-md-center">
+                <div class="col-md-8 col align-self-center">
+                  <button style="color:red;  border: 2px solid black;  border-radius: 20px /5px;" type="button"  id="change-button" class="btn btn-block">Change Return</button>
+                </div>
+              </div>
+          </form>
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="JS/dataService.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
