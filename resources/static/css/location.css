@@ -1,0 +1,31 @@
+
+
+.HeaderLogo{
+    margin-left: 22%;
+
+}
+
+.navBar{
+    width:100%;
+    margin-left:4%;
+    
+ 
+}
+
+body{
+    background-image: url("/img/compass.png");
+    background-repeat: no-repeat;
+    background-size:1700px;
+    background-attachment: fixed;
+    background-position-x: 1100px;
+    background-position-y: 480px;
+}
+
+table{
+    font-size:	20px;
+   font-weight:bold;
+   
+}
+.form{
+    font-weight:bold;
+}

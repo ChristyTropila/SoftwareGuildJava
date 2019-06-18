@@ -1,0 +1,36 @@
+
+
+.HeaderLogo{
+    margin-left: 22%;
+
+}
+
+.navBar{
+    width:100%;
+    margin-left:4%;
+    
+ 
+}
+
+body{
+    background-image: url("/img/villainlogofour.png");
+    background-repeat: no-repeat;
+   
+    background-size:800px;
+    background-position-x: 50%;
+    background-position-y: 350px;
+    background-attachment: fixed;
+}
+
+.hero{
+    margin-left:1500px;
+}
+table{
+    font-size:	20px;
+   font-weight:bold;
+   
+}
+
+.form{
+    font-weight:bold;
+}

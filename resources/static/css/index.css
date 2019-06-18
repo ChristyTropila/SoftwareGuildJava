@@ -1,0 +1,57 @@
+body{
+
+    background-image:url("/img/tv.png");
+     background-repeat: no-repeat;
+     background-size:1000px, 4500px;
+     background-position-x: 50%;
+     background-position-y: 170px;
+  
+   
+}
+
+
+
+.HeaderLogo{
+    margin-left: 22%;
+
+}
+
+.navBar{
+    width:100%;
+    margin-left:4%;
+    
+ 
+}
+table{
+   width:30%;
+   font-size:	20px;
+   font-weight:bold;
+   
+  margin-left:680px;
+}
+thead{
+   
+    background-color:transparent;
+    border-style : hidden!important;
+  
+}
+tbody{
+    background-color: transparent;
+
+}
+
+tbody th{
+ 
+    background-color: transparent;
+ 
+    shading: none;
+    
+}
+tbody td{
+    border: solid 2px red;
+    border-top:none;
+  
+    border-left: none;
+    border-right:none;
+}
+

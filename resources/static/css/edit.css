@@ -1,0 +1,26 @@
+
+
+.HeaderLogo{
+    margin-left: 22%;
+
+}
+
+.navBar{
+    width:100%;
+    margin-left:4%;
+    
+ 
+}
+
+body{
+    background-image: url("/img/villainlogo.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position-y: 600px;
+}
+
+table{
+    font-size:	20px;
+   font-weight:bold;
+   
+}

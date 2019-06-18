@@ -1,0 +1,30 @@
+
+body{
+    background-image: url("/img/lightening.png");
+    background-size:800px;
+    background-repeat: no-repeat;
+}
+
+.HeaderLogo{
+    margin-left: 22%;
+
+}
+
+.navBar{
+    width:100%;
+    margin-left:4%;
+    
+ 
+}
+.bang{
+   margin-left:1700px;
+}
+
+table{
+    font-size:	20px;
+   font-weight:bold;
+   
+}
+.form{
+    font-weight:bold;
+}

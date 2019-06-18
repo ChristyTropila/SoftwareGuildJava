@@ -1,0 +1,37 @@
+
+body{
+    background-image: url("/img/villainlogothree.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+     background-size:1200px, 3000px;
+     background-position-x: 1300px;
+     background-position-y: 500px;
+  
+   
+}
+
+
+.btn btn-link{
+    color:red;
+}
+
+.HeaderLogo{
+    margin-left: 22%;
+
+}
+
+.navBar{
+    width:100%;
+    margin-left:4%;
+    
+ 
+}
+table{
+    font-size:	20px;
+   font-weight:bold;
+   
+}
+
+.form{
+    font-weight:bold;
+}
